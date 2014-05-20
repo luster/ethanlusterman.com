@@ -1,1 +1,69 @@
-Coming Soon
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<title>Ethan Lusterman</title>
+
+</head>
+<body>
+
+<h1>ethan lusterman</h1>
+<h2>&copy; 1992-2014</h2>
+
+<p>
+    My name is Ethan Lusterman. I'm a full-time student, part-time software engineer,
+    part-time musician, full-time human.
+</p>
+<ul>
+    <li><a href="#" onClick="makeVisible('research');">research</a></li>
+    <li><a href="#" onClick="makeVisible('software');">software</a></li>
+    <li><a href="#" onClick="makeVisible('music');">music</a></li>
+    <li><a href="#" onClick="makeVisible('social');">social</a></li>
+</ul>
+<div class="section" id="research">
+    I graduated from The Cooper Union
+    for the Advancement of Science and Art with a B.E. in Electrical Engineering
+    this past May, and I am currently pursuing an M.E. in Electrical Engineering under
+    the advisement of Professor Sam Keene.
+    My research is focused on the intersection of machine learning, signal processing,
+    and music. During my time at Cooper Union, I have worked on projects in music genre
+    classification and clustering, audio dereverberation (think echo),
+    music transcription, digital guitar effects generation, and psychoacoustic compression of
+    audio (think wav to mp3!), among others.
+</div>
+<div class="section" id="software">
+    I am also a part-time software engineer at The Hackerati, located in New York, NY.
+    I worked on a team that maintained the APIs and editorial CMS
+    for a Top 50 website. I have also worked on a RESTful user API in Django,
+    meant to serve as a starting point for new applications that need to support users.
+    Most recently, I have been working on a big data/machine learning project for a top
+    market research company using tools such as Hadoop, Pig, MATLAB, and Python.
+</div>
+<div class="section" id="music">
+    In my free time, I like to write and play music. I am a guitar player and singer-songwriter.
+    I started playing in bands when I was in middle school, and more recently I started writing
+    my own material.
+    I self-released my first EP, Better Off, with the help of a few friends this past year.
+    I have performed at venues and festivals such as Bowery Electric, Lit Lounge, The Vibe Lounge,
+    and Vans Warped Tour. This summer, I'll be working on a lengthier release and more shows!
+</div>
+<div class="section" id="social">
+</div>
+
+<script type="text/javascript">
+function makeVisible(id) {
+    var e = document.getElementById(id);
+    var c = document.getElementsByClassName('section');
+    for (var i=0; i<c.length; i++) {
+        if (c[i] !== e) {
+            c[i].style.display = 'none';
+        }
+    }
+    e.style.display = 'block';
+}
+</script>
+
+</body>
+</html>
