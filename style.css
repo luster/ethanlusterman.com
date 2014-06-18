@@ -57,11 +57,19 @@ li + li:before {
 a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    cursor: pointer;
 }
 
 .circular {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    padding: 0 10px;
 }
