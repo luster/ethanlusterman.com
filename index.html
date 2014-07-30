@@ -5,6 +5,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="/style.css">
 <title>Ethan Lusterman</title>
 
@@ -24,60 +26,22 @@ ga('send', 'pageview');
 </script>
 <h1>ethan lusterman</h1>
 <h2>est. 1992</h2>
-
-<div class="contact">
-    <h3>get in touch</h3>
-
-    <h4>ethan [at] ethanlusterman [dot] com</h4>
-</div>
+<h2>new york, ny</h2>
 
 <p>
 My name is Ethan Lusterman. I'm a full-time student, part-time software engineer,
 part-time musician, full-time human.
 </p>
 <ul>
-    <li><a onClick="makeVisible('research');">research</a></li>
-    <li><a onClick="makeVisible('software');">software</a></li>
-    <li><a onClick="makeVisible('music');">music</a></li>
-    <li><a onClick="makeVisible('social');">social</a></li>
+    <li><a class="nav" onClick="makeVisible('social');">social</a></li>
+    <li><a class="nav" onClick="makeVisible('software');">software</a></li>
+    <li><a class="nav" onClick="makeVisible('research');">research</a></li>
+    <li><a class="nav" onClick="makeVisible('music');">music</a></li>
 </ul>
-<div class="section" id="research">
-    <a href="http://cooper.edu"><img class="circular" src="/img/cooper.png" alt="Cooper Union Logo"></a>
-    <p>
-    I graduated from The Cooper Union
-    for the Advancement of Science and Art with a B.E. in Electrical Engineering
-    this past May, and I am currently pursuing an M.E. in Electrical Engineering.
-    My research is focused on the intersection of machine learning, signal processing,
-    and music. During my time at Cooper Union, I have worked on projects in music genre
-    classification and clustering, audio dereverberation,
-    music transcription, digital guitar effects generation, and psychoacoustic compression of
-    audio, among others.
-    </p>
-</div>
-<div class="section" id="software">
-    <a href="http://thehackerati.com"><img class="circular" src="/img/H.png" alt="The Hackerati Logo"></a>
-    <p>
-    I work as a part-time software engineer at The Hackerati, located in New York, NY.
-    I worked on a team that maintained the APIs and editorial CMS
-    for a Top 50 website. I have also worked on a RESTful user API in Django,
-    meant to serve as a starting point for new applications that need to support users.
-    Most recently, I have been working on a big data/machine learning project for a top
-    market research company using tools such as Hadoop, Pig, MATLAB, and Python.
-    </p>
-</div>
-<div class="section" id="music">
-    <a href="http://soundcloud.com/ethanlusterman"><img class="circular" src="/img/sc.png" alt="SoundCloud Logo"></a>
-    <p>
-    In my free time, I like to write, play, and record music as well as go to shows. 
-    I started playing guitar and singing when I was 12.
-    I self-released my first EP, Better Off, with help from a few friends this past year.
-    I have performed at venues and festivals such as Bowery Electric, Lit Lounge, The Vibe Lounge,
-    and Vans Warped Tour. This summer, I'll be working on a lengthier release and booking more shows!
-    </p>
-    <h3>Check out my music on Spotify!</h3>
-    <iframe src="https://embed.spotify.com/?uri=spotify:album:0KMZ54Ovap7GQ9ZpjkxmeE&theme=white" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-</div>
 <div class="section" id="social">
+    <div class="buffer">
+        <img class="circular" src="/img/social.png" alt="Social">
+    </div>
     <h3>
     check it out
     </h3>
@@ -114,6 +78,14 @@ part-time musician, full-time human.
         </tr>
         <tr>
             <td>
+                <img src="/img/sp.ico" alt="Spotify">
+            </td>
+            <td>
+                <a href="https://play.spotify.com/artist/7qNEMdqJV4XIcH6Zp9zq1y">Ethan Lusterman</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <img src="/img/li.ico" alt="Linkedin">
             </td>
             <td>
@@ -122,19 +94,84 @@ part-time musician, full-time human.
         </tr>
     </table>
 
+    <div class="contact">
+        <h3>get in touch</h3>
+        <span>ethan [at] ethanlusterman [dot] com</span>
+    </div>
+</div>
+<div class="section" id="software">
+    <div class="buffer">
+    <a href="http://thehackerati.com"><img class="circular" src="/img/hack.png" alt="The Hackerati Logo"></a>
+    </div>
+    <p>
+    I am a part-time software engineer at The Hackerati, located in New York, NY.
+    I worked on a team that maintained the APIs and editorial CMS
+    for a Top 50 website. I have also worked on a RESTful user API in Django,
+    meant to serve as a starting point for new applications that need to support users.
+    Most recently, I have been working on a big data/machine learning project for a top
+    market research company using tools such as Hadoop, Pig, MATLAB, and Python.
+    </p>
+</div>
+<div class="section" id="research">
+    <div class="buffer">
+    <a href="http://cooper.edu"><img class="circular" src="/img/coop.png" alt="Cooper Union Logo"></a>
+    </div>
+    <p>
+    I graduated from The Cooper Union
+    for the Advancement of Science and Art with a B.E. in Electrical Engineering
+    this past May, and I am currently pursuing an M.E. in Electrical Engineering.
+    My research is focused on the intersection of machine learning, signal processing,
+    and music. During my time at Cooper Union, I have worked on projects in music genre
+    classification and clustering, audio dereverberation,
+    music transcription, digital guitar effects generation, and psychoacoustic compression of
+    audio, among others.
+    </p>
+</div>
+<div class="section" id="music">
+    <div class="buffer">
+    <a href="https://play.spotify.com/artist/7qNEMdqJV4XIcH6Zp9zq1y"><img class="circular" src="/img/sp.png" alt="Spotify Logo"></a>
+    </div>
+    <p>
+    In my free time, I like to write, play, and record music as well as go to shows. 
+    I started playing guitar and singing when I was 12.
+    I self-released my first EP, Better Off, with help from a few friends this past year.
+    I have performed at venues and festivals such as Bowery Electric, Lit Lounge, The Vibe Lounge,
+    and Vans Warped Tour. This summer, I'll be working on a lengthier release and booking more shows!
+    </p>
+    <h3>Check out my music on Spotify!</h3>
+    <iframe src="https://embed.spotify.com/?uri=spotify:album:0KMZ54Ovap7GQ9ZpjkxmeE&theme=white" width="250" height="80" frameborder="0" allowtransparency="true"></iframe>
 </div>
 
 
 <script type="text/javascript">
+/*
+var c = document.getElementsByClassName('section');
+var a = document.getElementsByClassName('nav');
+var l = c.length;
+var r = Math.floor(Math.random() * l);
+c[r].style.display = 'block';
+a[r].style.cssText = 'font-weight: bold;';
+*/
+
+var a = document.getElementsByClassName('nav');
+var c = document.getElementsByClassName('section');
+a[0].style.cssText = 'font-weight: bold; font-size: 110%;';
+c[0].style.display = 'block';
+
 function makeVisible(id) {
     var e = document.getElementById(id);
     var c = document.getElementsByClassName('section');
+    var a = document.getElementsByClassName('nav');
     for (var i=0; i<c.length; i++) {
         if (c[i] !== e) {
             c[i].style.display = 'none';
+            a[i].style.cssText = '';
+        } else {
+            var x = i;
         }
     }
     e.style.display = 'block';
+    a[x].style.cssText = 'font-weight: bold; font-size: 110%';
 }
 </script>
 </body>
