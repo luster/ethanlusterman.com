@@ -5,18 +5,14 @@ html {
     margin-right: auto;
 }
 
+h1, h2, h3, h4 { text-align: center; }
+
 h1 {
     margin-top: 20%;
-    text-align: center;
 }
 
-h2 {
-    margin-top: -5%;
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
+h2, h4 {
+    margin-top: -4%;
 }
 
 p {
@@ -72,4 +68,28 @@ table {
 
 td {
     padding: 0 10px;
+}
+
+td img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+td:first-child {
+    text-align: right;
+}
+
+td:last-child {
+    text-align: left;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+.foot {
+    margin: 0 auto;
+    bottom: 0;
 }
