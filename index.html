@@ -159,9 +159,10 @@ c[r].style.display = 'block';
 a[r].style.cssText = 'font-weight: bold;';
 */
 
+var cssText = 'font-weight: bold; font-size: 120%;';
 var a = document.getElementsByClassName('nav');
 var c = document.getElementsByClassName('section');
-a[0].style.cssText = 'font-weight: bold; font-size: 110%;';
+a[0].style.cssText = cssText;
 c[0].style.display = 'block';
 
 function makeVisible(id) {
@@ -177,7 +178,7 @@ function makeVisible(id) {
         }
     }
     e.style.display = 'block';
-    a[x].style.cssText = 'font-weight: bold; font-size: 110%';
+    a[x].style.cssText = cssText;
 }
 </script>
 </body>
