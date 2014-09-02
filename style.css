@@ -46,6 +46,10 @@ a {
     vertical-align: middle;
 }
 
+#social table tbody tr td a:hover {
+    font-weight: bold;
+}
+
 .buffer {
     height: 200px;
     display: block;
@@ -71,7 +75,7 @@ a {
 }
 
 table {
-    margin: 5px auto;
+    margin: 10px auto;
 }
 
 td {
@@ -106,9 +110,9 @@ span {
 .section ul {
     text-align: left;
     width: 90%;
-    list-style-position: inside;
+    list-style-position: outside;
     display: block;
-    margin-left: 5%;
+    margin-left: 2em;
 }
 
 .section ul li {
