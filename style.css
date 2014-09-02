@@ -37,21 +37,7 @@ li {
     padding-right: 10px;
 }
 
-#research {
-    display: none;
-}
-
-#software {
-    display: none;
-}
-
-#music {
-    display: none;
-}
-
-#social {
-    display: none;
-}
+.section {display: none;}
 
 a {
     text-decoration: none;
