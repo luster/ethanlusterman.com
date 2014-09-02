@@ -1,5 +1,6 @@
 html {
-    font-family: 'Droid Sans', sans-serif;
+    /*font-family: 'Droid Sans', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
@@ -30,7 +31,7 @@ li {
     display: inline-block;
 }
 
-li + li:before {
+#nav li + li:before {
     content: "";
     padding-left: 10px;
     padding-right: 10px;
@@ -84,7 +85,7 @@ a {
 }
 
 table {
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
 td {
@@ -116,3 +117,15 @@ span {
     text-align: center;
 }
 
+.section ul {
+    text-align: left;
+    width: 90%;
+    list-style-position: inside;
+    display: block;
+    margin-left: 5%;
+}
+
+.section ul li {
+    display: list-item;
+    text-align: left;
+}
