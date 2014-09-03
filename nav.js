@@ -6,15 +6,15 @@ navdis.style.cssText = cssText;
 dis.style.display = 'block';
 
 function makeVisible(id) {
-    var e = document.getElementById(id);
-    if (e === dis)
-        return;
-
-    dis.style.display = 'none';
-    navdis.style.cssText = 'cursor:pointer;';
-    dis = e;
-    navdis = document.getElementById('nav-'+id);
-    dis.style.display = 'block';
-    navdis.style.cssText = cssText;
+  var e = document.getElementById(id);
+  if (e === dis)
     return;
+
+  dis.style.display = 'none';
+  navdis.style.cssText = 'cursor:pointer;';
+  dis = e;
+  navdis = document.getElementById('nav-'+id);
+  dis.style.display = 'block';
+  navdis.style.cssText = cssText;
+  return;
 }

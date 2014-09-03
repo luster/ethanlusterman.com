@@ -1,124 +1,121 @@
 html {
-    /*font-family: 'Droid Sans', sans-serif;*/
-    font-family: 'Raleway', sans-serif;
-    max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+  /*font-family: 'Droid Sans', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1, h2, h3, h4 { text-align: center; }
 
 h1 {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 h2 {
-    margin-top: -5%;
+  margin-top: -5%;
 }
 
 p {
-    text-align: justify;
-    width: 95%;
-    margin: auto;
+  text-align: justify;
+  width: 95%;
+  margin: auto;
 }
 
 ul {
-    text-align: center;
-    -webkit-padding-start: 0;
+  -webkit-padding-start: 0;
 }
 
-li {
-    display: inline-block;
-}
-
-#nav li + li:before {
-    content: "";
-    padding-left: 10px;
-    padding-right: 10px;
+.nav {
+  color: black;
 }
 
 .section {display: none;}
 
 a {
-    text-decoration: none;
-    color: blue;
-    cursor: pointer;
-    vertical-align: middle;
+  text-decoration: none;
+  color: black;
+  opacity: 1;
+  cursor: pointer;
+  vertical-align: middle;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
 }
 
 #social table tbody tr td img {
 }
 
 #social table tbody tr td a:hover {
-    color: black;
+  opacity: 0.5;
 }
 
 .buffer {
-    height: 200px;
-    display: block;
-    position: relative;
+  height: 200px;
+  display: block;
+  position: relative;
 }
 
 .circular {
-    display: block;
-    max-width: 300px;
-    max-height: 170px;
-    height: auto;
-    position: absolute;
-    top:0;bottom:0;left:0;right:0;
-    margin: auto;
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 0.4s;
-    transition-timing-function: ease;
+  display: block;
+  max-width: 300px;
+  max-height: 170px;
+  height: auto;
+  position: absolute;
+  top:0;bottom:0;left:0;right:0;
+  margin: auto;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
 }
 
 .circular:hover {
-    opacity: .5;
+  opacity: .5;
 }
 
 table {
-    margin: 10px auto;
+  margin: 10px auto;
 }
 
 td {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 td img {
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
 }
 
 td:first-child {
-    text-align: right;
+  text-align: right;
 }
 
 td:last-child {
-    text-align: left;
+  text-align: left;
 }
 
 iframe {
-    margin: 0 auto;
-    display: block;
+  margin: 0 auto;
+  display: block;
 }
 
 span {
-    margin: auto;
-    display: block;
-    text-align: center;
+  margin: auto;
+  display: block;
+  text-align: center;
 }
 
 .section ul {
-    text-align: left;
-    width: 90%;
-    list-style-position: outside;
-    display: block;
-    margin-left: 2em;
+  text-align: left;
+  width: 90%;
+  list-style-position: outside;
+  display: block;
+  margin-left: 2em;
 }
 
 .section ul li {
-    display: list-item;
-    text-align: left;
+  display: list-item;
+  text-align: left;
 }
