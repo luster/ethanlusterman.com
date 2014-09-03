@@ -41,13 +41,16 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: blue;
     cursor: pointer;
     vertical-align: middle;
 }
 
+#social table tbody tr td img {
+}
+
 #social table tbody tr td a:hover {
-    font-weight: bold;
+    color: black;
 }
 
 .buffer {
