@@ -1,3 +1,9 @@
+/*
+ * Ethan Lusterman
+ *      nav.js
+ *      - toggles which div to display
+ *      - adjusts corresponding navigation link style
+ */
 
 var cssText = 'font-weight:bold;font-size:120%;cursor:default;';
 var dis = document.getElementById('social');
