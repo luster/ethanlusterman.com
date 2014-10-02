@@ -14,6 +14,7 @@ function genHtml(track, isNowPlaying) {
         html += '<img src="img/icon_eq.gif">';
     } else {
         html = 'Last Played<br>';
+        html += '<img src="img/music_note.png">';
     }
     html += '<a href="' + track.url + '">';
     html += track.artist["\#text"];
@@ -43,6 +44,3 @@ $.ajax({
         return;
     }
 });
-
-// mount the crowd
-// problems with my debit card
