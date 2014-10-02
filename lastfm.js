@@ -16,7 +16,7 @@ function genHtml(track, isNowPlaying) {
         html = 'Last Played<br>';
         html += '<img src="img/music_note.png">';
     }
-    html += '<a href="' + track.url + '">';
+    html += '<a href="' + track.url + '" target="_blank">';
     html += track.artist["\#text"];
     html += ' - ';
     html += track.name;
