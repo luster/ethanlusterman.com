@@ -5,7 +5,7 @@
  *      - adjusts corresponding navigation link style
  */
 
-var cssText = 'font-weight:bold;font-size:120%;cursor:default;';
+var cssText = 'opacity:0.5;cursor:default;';
 var dis = document.getElementById('social');
 var navdis = document.getElementById('nav-social');
 navdis.style.cssText = cssText;

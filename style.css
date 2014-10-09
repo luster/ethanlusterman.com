@@ -45,6 +45,10 @@ ul {
     color: black;
 }
 
+.nav:hover {
+    opacity: 0.5;
+}
+
 .section {display: none;}
 
 div#social.section div.contact a span,
