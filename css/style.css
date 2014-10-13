@@ -1,3 +1,11 @@
+/*
+TODO: make it look good with CSS reset
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+*/
 
 html {
     font-family: 'Raleway', sans-serif;
@@ -138,4 +146,8 @@ span {
 .section ul li {
     display: list-item;
     text-align: left;
+}
+
+@-moz-document url-prefix() {
+    .section ul { margin-left: 0; }
 }
