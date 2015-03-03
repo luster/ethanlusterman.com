@@ -151,3 +151,7 @@ span {
 @-moz-document url-prefix() {
     .section ul { margin-left: 0; }
 }
+
+#freelance > p > a {
+    color: blue;
+}
