@@ -152,6 +152,7 @@ span {
     .section ul { margin-left: 0; }
 }
 
-#freelance > p > a {
+#freelance > p > a,
+#software > p > a {
     color: blue;
 }
