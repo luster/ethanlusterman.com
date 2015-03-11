@@ -35,3 +35,21 @@ function makeVisible(id) {
 
   return;
 }
+
+function random() {
+  var navs = document.getElementsByClassName('nav');
+
+  var m = {
+    software: 2,
+    freelance: 4,
+    music: 3,
+    social: 1,
+    research: 0
+  }
+
+  var next = navs[m[dis.id]].text;
+
+  makeVisible(next);
+  return;
+
+}

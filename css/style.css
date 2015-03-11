@@ -53,7 +53,11 @@ ul {
     color: black;
 }
 
-.nav:hover {
+a {
+    opacity: 1;
+}
+
+.nav:hover, a:hover {
     opacity: 0.5;
 }
 
