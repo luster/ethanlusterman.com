@@ -36,7 +36,7 @@ $.ajax({
     success: function(d) {
         var track = d.recenttracks.track;
 
-        if (track.length > 1) {
+        if (track.length >= 1) {
             track = track[0];
         }
 
