@@ -15,7 +15,7 @@ function genHtml(track, isNowPlaying) {
 
     if (isNowPlaying) {
         html = 'Now Playing<br>';
-        html += '<img src="img/vinyl2.gif" width=15>';
+        html += '<img src="img/vinyl.gif" width=15>';
     } else {
         html = 'Last Played<br>';
         html += '<img src="img/music_note.png">';
