@@ -13,7 +13,9 @@ var url = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=gu
 function genHtml(track, isNowPlaying) {
     var html;
 
-    html = '<img src="' + track.image[2]['#text'] + '"><br>';
+    html = "";
+    if (track.image[2]['#text'] !== "")
+        html += '<img src="' + track.image[2]['#text'] + '"><br>';
 
     if (isNowPlaying) {
         html += '<br>Now Playing<br>';
