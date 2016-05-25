@@ -13,11 +13,13 @@ var url = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=gu
 function genHtml(track, isNowPlaying) {
     var html;
 
+    html = '<img src="' + track.image[2]['#text'] + '"><br>';
+
     if (isNowPlaying) {
-        html = 'Now Playing<br>';
+        html += '<br>Now Playing<br>';
         html += '<img src="img/vinyl.gif" width=15>';
     } else {
-        html = 'Last Played<br>';
+        html += '<br>Last Played<br>';
         html += '<img src="img/music_note.png">';
     }
     html += '<a href="' + track.url + '" target="_blank">';

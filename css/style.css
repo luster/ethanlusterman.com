@@ -34,7 +34,7 @@ h2 {
     margin-right: 5px;
 }
 
-#lastfm a:hover,
+#lastfm a:hover, img:hover,
 div#social.section div.contact a span:hover {
     opacity: 0.5;
 }
@@ -64,7 +64,7 @@ a {
 .section {display: none;}
 
 div#social.section div.contact a span,
-a {
+a, img {
     text-decoration: none;
     color: black;
     opacity: 1;
@@ -73,6 +73,10 @@ a {
     transition-property: opacity;
     transition-duration: 0.4s;
     transition-timing-function: ease;
+}
+
+img, img:hover {
+    cursor: default;
 }
 
 #social table tbody tr td img {
