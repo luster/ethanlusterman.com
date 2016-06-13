@@ -47,9 +47,11 @@ function random() {
     research: 0
   }
 
-  var next = navs[m[dis.id]].text;
+  var next = navs[Math.floor(navs.length * Math.random())].id.slice(4);
 
   makeVisible(next);
   return;
 
 }
+
+random()
